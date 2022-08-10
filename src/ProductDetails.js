@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
+import {IoMdStar} from 'react-icons/io'
 
 function ProductDetails() {
     const location = useLocation()
@@ -15,7 +16,7 @@ function ProductDetails() {
             <h2>Product : {info.title}</h2>
             <h2>Price : ${info.price}</h2>
             <h2>Brand : {info.brand}</h2>
-            <h2>Rating : {info.rating}</h2>
+            <h2>Rating : <IoMdStar/> {info.rating}</h2>
         </div>
         </div>
     </div>
